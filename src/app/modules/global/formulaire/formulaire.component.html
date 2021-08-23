@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+<link 
+    rel="stylesheet"
+    href="https://use.fontawesome.com/releases/v5.3.1/css/all.css"
+    integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
+  
+	<link href="https://fonts.googleapis.com/css?family=Poppins:600&display=swap" rel="stylesheet">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+  
+
+
+</head>
+<body>
+    <div class="container">
+        <div class="identite">
+            <h1> - identité</h1>
+            <div class="text-box"><p>Civilité</p><input type="text" value="Mme." id="Civilite" readonly><i class="fas fa-sort-down" (click)="show_hide_Slider()"></i></div>
+            <div class="slider hidden">
+                <input type="button" (click)="select_civil(1)" value="Mlle.">
+                <input type="button" (click)="select_civil(2)" value="Mr.">
+                <input type="button" (click)="select_civil(3)" value="Mme.">
+            </div>
+            <div class="text-box"><p>Nom</p><input type="text" id="nom"><i class="fas fa-user"></i></div>
+            <div class="text-box"><p>Prenom</p><input type="text" id="prenom" ><i class="fas fa-user"></i></div>
+            <div class="text-box-wide"><p>Date de Naissance</p><input type="date" id="date" placeholder="yyyy-mm-dd"></div>
+            <div class="text-box-wide  reduce"><p>Situation familial</p><input type="text" value="N.R" id="situation" readonly><i class="fas fa-sort-down"></i></div>
+            <div class="text-box-wide"><input type="number" id="nb_enfant" placeholder="Nomber d'Enfants"><i class="fas fa-users"></i></div>
+         </div>
+
+
+        <div class="contact">
+            <h1> - Contact</h1>
+            <div class="text-box-wide"><p>Email</p><input type="email" id="email"><i class="fas fa-at"></i></div>
+            <div class="text-box-wide"><p>Telephone</p><input type="text" id="phone1" ng2TelInput><i class="fas fa-phone"></i></div>
+            <div class="text-box-wide"><p>Telephone2</p><input type="text" id="phone2" ng2TelInput><i class="fas fa-phone"></i></div>
+            <div class="text-box-wide"><p>Mobile</p><input type="text" id="mobile" ng2TelInput><i class="fas fa-phone"></i></div>
+        </div>
+
+         <div class="address">
+            <h1> - Adresse</h1>
+            <div class="text-box-wide"><input type="text" id="adresse" placeholder="Adresse"><i class="fas fa-map-marker-alt"></i></div>
+            <div class="text-box increase"><p>Pays</p><input type="text" id="pays"></div>
+            <div class="text-box increase"><p>Ville</p><input type="text" id="ville"></div>
+            <div class="text-box"><p>Rue</p><input type="text" id="rue"></div>
+            <div class="text-box"><p>N° de Rue</p><input type="number" id="n_rue"></div>
+            <div class="text-box"><p>Code postal</p><input type="number" id="code_postal"></div>
+            <div class="text-box-wide"><p>Complément d'Adresse</p><input type="text" id="comp_Adresse"></div>
+        </div>
+
+        <div class="more_info">
+            <h1> - Informations complémentaires</h1>
+            <div class="text-box-wide"><input type="text" id="mot_cle" placeholder="Mot clé"></div>
+            <div class="text-box-wide  reduce"><p>Commentaire sur le prospect</p><textarea type="text" value="N.R" id="commentaire"></textarea></div>
+        </div>
+        <div class="btn">
+        <input type="button" class="buttonn" (click)="verify()" value="Enregistrer">
+        </div>
+
+        <div class="error_box">
+            <h2>{{Error_message}}</h2>
+        </div>
+    </div>
+
+
+</body>
+</html>

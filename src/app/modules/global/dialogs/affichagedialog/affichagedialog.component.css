@@ -1,0 +1,68 @@
+h5{
+    font-size: 32px;
+    text-align: center;
+    color: orangered;
+}
+
+.main-form {
+    min-width: 150px;
+    max-width: 500px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  
+  .form-full-width {
+    width: 100%;
+  }
+
+  input{
+      width:550px;
+      display: inline-block;
+      font-size: 22px;
+      border: none;
+      outline: none;
+      border-bottom: 1px solid orangered ;
+  }
+
+  h4{
+    font-size: 18px;
+    margin-bottom: -1px;
+    margin-top: 5px;
+  }
+  
+  .Edit__button{
+      width: 80px;
+      height: 40px;
+      border-radius: 5px;
+      position:absolute;
+      background: orangered;
+      color: white;
+      bottom: 23%;
+      right: 30%;
+      outline: none;
+      border:none;
+  }
+  .Cancel__button{
+    width: 80px;
+    height: 40px;
+    border-radius: 5px;
+    position:absolute;
+    background: none;
+    color: orangered;
+    bottom: 23%;
+    right: 36.5%;
+    outline: none;
+    border: 1px solid orangered ;
+}
+
+.Edit__button:hover{
+    background: none;
+    color: orangered;
+    border: 1px solid orangered ;
+}
+
+.Cancel__button:hover{
+    background: orangered;
+    color: white;
+    border:none;
+}

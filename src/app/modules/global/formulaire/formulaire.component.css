@@ -1,0 +1,267 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&display=swap");
+
+/*identity section*/
+.identite{
+    display: inline-block;
+    background-color: white;
+    padding: 5px;
+    padding-bottom: 40px;
+    margin-left: -100px;
+    position: relative;
+    width: 700px;
+    border-radius: 6px;
+    box-shadow: 0px 5px 13px rgb(128, 127, 127);
+}
+
+input{
+    outline: none;
+    border: none;
+    font-size: 16px;
+    display:inline-block;
+    width: 180px;
+}
+h1{
+    margin-left: 10px;
+    font-size: 24px;
+}
+.text-box,.text-box-wide{
+    display: inline-block;
+    margin: 6px;
+    border-bottom: 1.5px solid;
+    border-color: black;
+    width: 200px;
+}
+
+.text-box-wide{
+    margin-top: 30px;
+    width: 670px;
+}
+
+.fa-sort-down,.fa-user,.fa-calendar,.fa-users,.fa-at,.fa-phone
+,.fa-map-marker-alt{
+    display: inline-block;
+    font-size: 14px;
+    color: rgb(146, 145, 145);
+}
+
+.text-box-wide input{
+    width: 645px;
+}
+
+.slider{
+position: absolute;
+width: 180px;
+height:60px;
+border: 1px solid black;
+z-index: 10;
+border-radius: 5px;
+overflow: hidden;
+overflow: scroll;
+background-color:white;
+transition: 1s ease-in-out;
+}
+.hidden{
+    display: none;
+    transition: 1s ease-in-out;
+}
+
+.slider::-webkit-scrollbar{
+    display: none;
+}
+.slider input{
+    
+    background: none;
+}
+
+.slider input:hover{
+    background: black;
+    color: white;
+}
+
+.reduce{
+    margin-top: 5px;
+}
+p{
+    color:rgb(151, 148, 148);
+    font-size: 16px;
+}
+
+/* contact section */
+
+.contact{
+    display: inline-block;
+    position: absolute;
+    background-color: white;
+    padding: 5px;
+    padding-bottom: 40px;
+    width: 590px;
+    margin-left:20px;
+    border-radius: 6px;
+    box-shadow: 0px 5px 13px rgb(128, 127, 127);
+}
+
+.contact input{
+    outline: none;
+    border: none;
+    font-size: 20px;
+    display:inline-block;
+    width: 545px;
+}
+.contact .text-box-wide{
+    margin-top: 0px;
+    width: 570px;
+}
+
+/*address section */
+.address{
+    display: inline-block;
+    background-color: white;
+    margin-top: 10px;
+    padding: 5px;
+    margin-left: -100px;
+    padding-bottom: 40px;
+    width: 700px;
+    border-radius: 6px;
+    box-shadow: 0px 5px 13px rgb(128, 127, 127);
+}
+
+
+/* Information complémentaires */
+.more_info{
+    display: inline-block;
+    background-color: white;
+    position: absolute;
+    margin-top: 10px;
+    padding: 5px;
+    margin-left:20px;
+    padding-bottom: 150px;
+    width: 590px;
+    border-radius: 6px;
+    box-shadow: 0px 5px 13px rgb(128, 127, 127);
+}
+
+.more_info input,textarea{
+    outline: none;
+    border: none;
+    font-size: 16px;
+    display:inline-block;
+    width: 545px;
+}
+.more_info .text-box-wide{
+    margin-top: 0px;
+    width: 570px;
+}
+
+.more_info input{
+    margin-top: 30px;
+}
+
+.more_info textarea{
+    width: 565px;
+    height: 100px;
+}
+
+.increase{
+    width: 300px;
+}
+
+.buttonn{
+    border-radius: 5px;
+    font-size: 24px;
+    color:white;
+    width: 200px;
+    background:linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(43,9,121,1) 35%, rgba(0,151,255,1) 100%);
+    box-shadow: 0px 5px 13px rgb(128, 127, 127);
+    transition: 1s ease-in-out;
+}
+.btn{
+    margin-left: 45%;
+    margin-top: 15px;
+    align-items: center;
+
+}
+
+.buttonn:hover{
+    background:linear-gradient(90deg, rgba(235,237,237,1) 0%, rgba(212,17,50,1) 35%, rgba(255,0,95,1) 100%); 
+    
+}
+
+/*error box*/
+
+.error_box{
+    display: inline-block;
+    position: absolute;
+    height: 100px;
+    width:200px;
+    margin-top: -40px;
+    padding-top: 20px;
+    opacity: 0;
+    right:5%;
+    text-align: center;
+    color: white;
+    background: linear-gradient(61deg, rgba(251,139,163,1) 0%, rgba(226,4,27,1) 100%);
+    border-radius: 8px;
+    z-index: 100;
+    box-shadow: 0px 5px 13px rgb(128, 127, 127);
+    transition: 0.5s ease-in-out;
+}
+
+.error_show{
+    margin-top: -60px;
+    opacity: 1;
+    transition: 0.5s ease-in-out;
+}
+@media screen and (min-width: 1439px){
+.identite{
+position: relative;
+
+}
+
+.address{
+ position: relative;
+}
+
+.contact{
+    position: relative;
+}
+
+.more_info{
+position: relative;
+padding-bottom: 40px;
+}
+.error_box{
+    right: 3%;
+}
+}
+@media screen and (max-width: 767px){
+    .identite{
+    position: relative;
+    display: block;
+    margin-top: 10px;
+    margin-left: 5px;
+    }
+    
+    .address{
+     position: relative;
+     display:block;
+     margin-left: 5px;
+     margin-top: 10px;
+    }
+    
+    .contact{
+        position: relative;
+        display: block;
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+    
+    .more_info{
+    position: relative;
+    display: block;
+    margin-left: 5px;
+    margin-top: 10px;
+    }
+    .error_box{
+        right:3%;
+    }
+}

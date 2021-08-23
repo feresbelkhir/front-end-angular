@@ -1,0 +1,19 @@
+
+    <h5>Edit</h5>
+    <form class="main-form">
+
+        <h4>Id</h4>
+          <input matInput id="id" readonly>
+    
+            <h4>Nom</h4>
+            <input matInput id="nom" readonly>
+              
+            <h4>Relation</h4>
+            <input matInput id="relation">
+
+            <h4>l’Email de la personne avec laquelle il a une relation</h4> <!-- cause the Email is a unique attribute-->
+            <input matInput id="Email">
+          
+          <button class="Cancel__button" mat-button >Cancel</button>
+          <button class="Edit__button" mat-button (click)="Edit()">Edit</button>
+      </form>
